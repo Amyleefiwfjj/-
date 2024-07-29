@@ -1,0 +1,133 @@
+.SignUp {
+  display: flex; /* 자식 요소를 플렉스 박스 컨테이너로 설정 */
+  flex-direction: column; /* 자식 요소를 세로 방향으로 정렬 */
+  align-items: center; /* 자식 요소를 수평 가운데 정렬 */
+  margin: 0; /* 외부 여백을 0으로 설정 */
+  min-height: 110%; /* 최소 높이를 110%로 설정 (부모 요소 높이의 110%) */
+  height: auto; /* 높이를 자동으로 설정 */
+  box-sizing: border-box; /* padding과 border를 요소의 전체 너비와 높이에 포함 */
+}
+.signup-header {
+  width: 100%; /* 너비를 100%로 설정 */
+  background-color: #e0e5ef; /* 배경색을 설정 */
+  padding: 27px; /* 내부 여백을 27px로 설정 */
+  text-align: center; /* 텍스트를 가운데 정렬 */
+  margin-bottom: 40px; /* 하단 외부 여백을 40px로 설정 */
+}
+.signup-progress {
+  display: flex; /* 자식 요소를 플렉스 박스 컨테이너로 설정 */
+  justify-content: center; /* 자식 요소를 수평 가운데 정렬 */
+  margin: 20px 10px; /* 상하 외부 여백 20px, 좌우 외부 여백 10px 설정 */
+}
+.progress-step {
+  width: 30px; /* 너비를 30px로 설정 */
+  height: 30px; /* 높이를 30px로 설정 */
+  line-height: 30px; /* 줄 높이를 30px로 설정 (텍스트를 세로 가운데 정렬) */
+  border-radius: 50%; /* 둥근 모서리를 만들어 원형으로 설정 */
+  background-color: #ddd; /* 배경색을 설정 */
+  color: white; /* 텍스트 색을 설정 */
+  text-align: center; /* 텍스트를 가운데 정렬 */
+  margin: 0 10px; /* 좌우 외부 여백을 10px로 설정 */
+}
+  
+.progress-step.active {
+  background-color: #a5bbe7; /* 활성화된 단계의 배경색을 설정 */
+}
+.signup-content {
+  background-color: white; /* 배경색을 흰색으로 설정 */
+  padding: 20px; /* 내부 여백을 20px로 설정 */
+  border-radius: 8px; /* 둥근 모서리를 8px로 설정 */
+  max-width: 800px; /* 최대 너비를 800px로 설정 */
+  margin-top: 20px; /* 상단 외부 여백을 20px로 설정 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 그림자를 설정하여 입체감 부여 */
+  width: 100%; /* 너비를 100%로 설정 */
+}
+  
+.signup-form {
+  display: flex; /* 자식 요소를 플렉스 박스 컨테이너로 설정 */
+  flex-direction: column; /* 자식 요소를 세로 방향으로 정렬 */
+  align-items: center; /* 자식 요소를 수평 가운데 정렬 */
+}
+  
+.step {
+  margin-bottom: 20px; /* 하단 외부 여백을 20px로 설정 */
+  max-width: 70%; /* 최대 너비를 70%로 설정 */
+  width: 100%; /* 너비를 100%로 설정 */
+}
+
+.form-group {
+  margin-bottom: 15px; /* 하단 외부 여백을 15px로 설정 */
+}
+  .form-group label {
+    display: block; /* 블록 요소로 설정 */
+    margin-bottom: 5px; /* 하단 외부 여백을 5px로 설정 */
+    font-weight: bold; /* 글꼴 두께를 굵게 설정 */
+    color: #333; /* 텍스트 색을 설정 */
+  }
+  
+  .form-group textarea {
+    width: 100%; /* 너비를 100%로 설정 */
+    height: 100px; /* 높이를 100px로 설정 */
+    padding: 10px; /* 내부 여백을 10px로 설정 */
+    border: 1px solid #ccc; /* 테두리를 설정 */
+    border-radius: 4px; /* 둥근 모서리를 4px로 설정 */
+    font-size: 14px; /* 글꼴 크기를 14px로 설정 */
+    resize: none; /* 사용자가 크기를 조절할 수 없도록 설정 */
+    margin-bottom: 10px; /* 하단 외부 여백을 10px로 설정 */
+  }
+  
+
+  .error {
+    color: red; /* 텍스트 색을 빨간색으로 설정 */
+    font-size: 14px; /* 글꼴 크기를 14px로 설정 */
+    margin-top: 5px; /* 상단 외부 여백을 5px로 설정 */
+  }
+  
+  
+  .form-group input[type="text"],
+  .form-group input[type="password"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="num"],
+  .form-group input[type="checkbox"] {
+    padding: 10px; /* 내부 여백을 10px로 설정 */
+    border: 1px solid #ccc; /* 테두리를 설정 */
+    border-radius: 4px; /* 둥근 모서리를 4px로 설정 */
+    font-size: 14px; /* 글꼴 크기를 14px로 설정 */
+    width: 100%; /* 너비를 100%로 설정 */
+  }
+  
+  
+  .form-group input[type="checkbox"] {
+    width: auto; /* 너비를 자동으로 설정 */
+    margin-right: 5px; /* 오른쪽 외부 여백을 5px로 설정 */
+  }
+  
+  
+  .SignUp button {
+    background-color: #a5bbe7; /* 배경색을 설정 */
+    color: white; /* 텍스트 색을 흰색으로 설정 */
+    padding: 10px; /* 내부 여백을 10px로 설정 */
+    border: none; /* 테두리를 없앰 */
+    border-radius: 4px; /* 둥근 모서리를 4px로 설정 */
+    font-size: 16px; /* 글꼴 크기를 16px로 설정 */
+    cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+    transition: background-color 0.3s ease; /* 배경색 전환 효과 설정 */
+    margin-top: 10px; /* 상단 외부 여백을 10px로 설정 */
+    margin-right: 20px; /* 오른쪽 외부 여백을 20px로 설정 */
+  }
+  
+  
+  button:hover {
+    background-color: #8fa9d6; /* 마우스를 올렸을 때 배경색을 변경 */
+  }
+  /*hover:css에서 사용하는 가상 클래스
+    사용자가 특정 요소에 마우스를 올렸을 때 그 요소의 스타일을 변경할 수 있음*/
+
+  
+  .SignUp button [type="submit"] {
+    width: 100%; /* 너비를 100%로 설정 */
+    margin-top: 20px; /* 상단 외부 여백을 20px로 설정 */
+  }
+  
+
